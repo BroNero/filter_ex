@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.posts {
+    display: flex;
+    margin: 20px auto;
+    gap: 20px;
+    width: fit-content;
+}
+
+.posts div {
+    box-shadow: 1px 1px 10px gray;
+    width: 200px;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white; 
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+
+}
+.posts p {
+    backdrop-filter: blur(2px);
+    text-transform: capitalize;
+    background-color: gray;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+div[value="bmw"]{
+    background: url(bmw.png) center no-repeat;
+    background-size: cover;
+}
+div[value="tesla"]{
+    background: url(tesla.png) center no-repeat;
+    background-size: cover;
+}
+.posts div:hover{
+    box-shadow: 3px 1px 10px rgb(57, 57, 57);
+    background: rgb(205, 200, 200);
+
+}
